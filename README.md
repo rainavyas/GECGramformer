@@ -9,3 +9,4 @@ Clone this repository.
 ## Install with PyPI
 
 `pip install transformers`
+`pip install torch`
