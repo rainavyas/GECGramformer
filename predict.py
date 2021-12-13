@@ -70,8 +70,9 @@ if __name__ == "__main__":
 
     # Correction (prediction) for each input sentence
     corrections = []
-    for sent in sentences:
-        corrections.append()
+    for i, sent in enumerate(sentences):
+        print(f'On {i}/{len(sentences)}')
+        corrections.append(correct(model, tokenizer, sent))
     assert len(corrections) == len(identifiers), "Number of ids don't match number of predictions"
 
     # Save predictions
